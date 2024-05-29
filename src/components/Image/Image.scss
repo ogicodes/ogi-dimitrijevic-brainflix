@@ -1,0 +1,30 @@
+@use '../../styles/partials/mediaQuery' as *;
+@use '../../styles/partials/variables' as *;
+
+.avatar {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background-color: $brainFlixMercury;
+
+    @include respond(tablet) {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &__image {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 50%;
+
+        @include respond(tablet) {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+}
+
+
+
+
