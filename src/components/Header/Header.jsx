@@ -8,17 +8,16 @@ export default function Header() {
 
     return (
         <>
-            <Header class='header'>
-                <a href="#"><img class='header__logo' src={Logo} alt="BrainFlix Logo"></img></a>
+            <header className='header'>
+                <a href="#"><img className='header__logo' src={Logo} alt="BrainFlix Logo"></img></a>
                 <div>
                     <form action="submit" className="header__form">
-                        <button class="header__form__button" src={Magnifier}></button>
+                        <button className="header__form__button" src={Magnifier}></button>
                         <input type="text" placeholder="Search" className="header__form__search" />
                     </form>
                     <Image src={MohanMuruge} alt='Profile Picture of Mohan Muruge' />
                 </div>
-                
-            </Header>
+            </header>
         </>
     )
 }

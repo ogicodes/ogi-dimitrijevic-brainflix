@@ -3,8 +3,10 @@ import '../Image/Image.scss'
 
 export default function Image(props) {
     return(
-        <div class='avatar'>
-            <img class='avatar__img' src={props.src} alt={props.alt} ></img>
+        <div className='avatar'>
+            <img className='avatar__img' src={props.src} alt={props.alt} ></img>
         </div>
     )
 }
+
+
