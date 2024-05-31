@@ -11,13 +11,13 @@ export default function Header() {
     return (
         <>
             <header className='header'>
-                <a href="#"><img className='header__logo' src={Logo} alt="BrainFlix Logo"></img></a>
+                <a className="header__link" href="#"><img className='header__logo' src={Logo} alt="BrainFlix Logo"></img></a>
                 <div>
                     <form action="submit" className="header__form">
-                        <button className="header__form__button" src={Magnifier}></button>
-                        <input type="text" placeholder="Search" className="header__form__search" />
+                        <button className="header__button"><img src={Magnifier}></img></button>
+                        <input type="text" placeholder="Search" className="header__search" />
+                        <Image src={MohanMuruge} alt='Profile Picture of Mohan Muruge' />
                     </form>
-                    <Image src={MohanMuruge} alt='Profile Picture of Mohan Muruge' />
                     <Button src={upload} alt='upload image' content='UPLOAD' />
                 </div>
             </header>

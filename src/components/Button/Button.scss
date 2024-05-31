@@ -11,6 +11,8 @@
     width: 100%;
     display: flex;
     align-items: center;
+    @include labels-and-buttons-mobile;
+    font-weight: 700;
 
     &__image {
         padding-left: 0.5rem;
