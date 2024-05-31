@@ -1,0 +1,53 @@
+/*---------------------------------------------------------*/
+/*                  MEDIA QUERY MIXIN                      */
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*                      COLORS                             */
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*                      FONT FACE                          */
+/*---------------------------------------------------------*/
+@font-face {
+  font-family: avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+}
+/*---------------------------------------------------------*/
+/*                    FONT STYLES                          */
+/*---------------------------------------------------------*/
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.card__photo-image, .card__photo-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+.card__photo-container {
+  background-color: #AFAFAF;
+  margin-right: 1rem;
+  width: 60%;
+}
+.card__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.card__title {
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  font-weight: 700;
+  margin: 0;
+}
+.card__channel {
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  font-weight: 400;
+  margin: 0;
+}/*# sourceMappingURL=VideoCard.css.map */

@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.scss'
 import Header from './components/Header/Header.jsx'
-import DataList from './components/DataList/DataList.jsx'
+import VideoList from './components/VideoList/VideoList.jsx'
 import SelectedVideo from './components/SelectedVideo/SelectedVideo.jsx'
 import { useState } from 'react'
 import videoDetails from './data/video-details.json';
@@ -19,7 +19,7 @@ export default function App() {
     <>
     <Header />
     <SelectedVideo selectedVideo={selectedVideo} />
-    <DataList setSelectedVideoId={setSelectedVideoId} selectedVideoId={selectedVideoId} />
+    <VideoList setSelectedVideoId={setSelectedVideoId} selectedVideoId={selectedVideoId} />
     </>
   )
 }

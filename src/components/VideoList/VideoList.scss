@@ -1,0 +1,14 @@
+@use '../../styles/partials/mediaQuery' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.list {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+
+    &__heading {
+        @include section-header-mobile;
+        color: $brainFlixSilver;
+        font-weight: 700;
+    }
+}
