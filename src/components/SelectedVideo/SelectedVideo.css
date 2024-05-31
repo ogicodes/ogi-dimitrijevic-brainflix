@@ -25,14 +25,53 @@
 /*---------------------------------------------------------*/
 /*                    FONT STYLES                          */
 /*---------------------------------------------------------*/
-.list {
-  padding: 0 1rem;
-  margin-bottom: 2rem;
+.selected {
+  padding: 0;
+  width: 100%;
 }
-.list__heading {
+.selected__video {
+  width: 100%;
+  height: auto;
+}
+.selected__title {
+  padding: 1.5rem 1rem 1rem 1rem;
   font-family: avenir, Arial, Helvetica, sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-  color: #AFAFAF;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #323232;
   font-weight: 700;
-}/*# sourceMappingURL=VideoList.css.map */
+}
+.selected__list {
+  margin: 0 1rem;
+  padding: 1rem 0;
+  list-style: none;
+  border-bottom: solid #AFAFAF 1px;
+  border-top: solid #AFAFAF 1px;
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.selected__item {
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #AFAFAF;
+  font-weight: 400;
+}
+.selected__item:nth-child(1) {
+  padding-bottom: 1rem;
+}
+.selected__img {
+  padding-right: 1rem;
+}
+.selected__item-modifier {
+  color: #323232;
+}
+.selected__description {
+  padding: 1rem;
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  font-weight: 400;
+}/*# sourceMappingURL=SelectedVideo.css.map */

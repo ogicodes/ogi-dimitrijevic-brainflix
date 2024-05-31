@@ -7,10 +7,28 @@
 @font-face {
   font-family: avenir;
   src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Demi.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
 }
 /*---------------------------------------------------------*/
 /*                    FONT STYLES                          */
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
 /*                      COLORS                             */
-/*---------------------------------------------------------*//*# sourceMappingURL=App.css.map */
+/*---------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=App.css.map */
