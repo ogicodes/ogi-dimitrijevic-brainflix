@@ -2,7 +2,9 @@ import Image from "../Image/Image"
 import MohanMuruge from '../../assets/images/images/Mohan-muruge.jpg' 
 import Logo from '../../assets/images/logo/BrainFlix-logo.svg'
 import Magnifier from '../../assets/images/icons/search.svg'
-
+import Button from "../Button/Button"
+import upload from '../../assets/images/icons/upload.svg'
+import '../Header/Header.scss'
 
 export default function Header() {
 
@@ -16,6 +18,7 @@ export default function Header() {
                         <input type="text" placeholder="Search" className="header__form__search" />
                     </form>
                     <Image src={MohanMuruge} alt='Profile Picture of Mohan Muruge' />
+                    <Button src={upload} alt='upload image' content='UPLOAD' />
                 </div>
             </header>
         </>

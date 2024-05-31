@@ -2,3 +2,7 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 
+.header {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}

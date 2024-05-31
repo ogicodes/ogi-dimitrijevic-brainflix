@@ -25,7 +25,17 @@
 /*---------------------------------------------------------*/
 /*                      COLORS                             */
 /*---------------------------------------------------------*/
-.header {
-  padding: 0 1rem;
-  margin-bottom: 1rem;
-}/*# sourceMappingURL=Header.css.map */
+.button {
+  color: #FFFFFF;
+  background-color: #0095FF;
+  border: none;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.button__image {
+  padding-left: 0.5rem;
+  padding-right: 5.5rem;
+}/*# sourceMappingURL=Button.css.map */
