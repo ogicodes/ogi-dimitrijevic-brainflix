@@ -25,14 +25,13 @@
 /*---------------------------------------------------------*/
 /*                    FONT STYLES                          */
 /*---------------------------------------------------------*/
-.list {
+.comments {
   padding: 0 1rem;
-  margin-bottom: 2rem;
 }
-.list__heading {
+.comments__title {
   font-family: avenir, Arial, Helvetica, sans-serif;
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  color: #AFAFAF;
-  font-weight: 700;
-}/*# sourceMappingURL=VideoList.css.map */
+  font-weight: 600;
+  color: #323232;
+}/*# sourceMappingURL=Comments.css.map */

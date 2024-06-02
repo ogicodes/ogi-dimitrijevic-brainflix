@@ -1,11 +1,11 @@
 import '../SelectedVideo/SelectedVideo.scss';
 import like from '../../assets/images/icons/likes.svg';
 import eye from '../../assets/images/icons/views.svg';
+import Comments from '../Comments/Comments';
 
 export default function SelectedVideo(props){
 
-    console.log(props)
-    const {title, channel, description, image, views, timestamp, likes} = props.selectedVideo
+    const {title, channel, description, image, views, timestamp, likes, comments} = props.selectedVideo
     return (
         <div className="selected">
             <video poster={image} alt={`picture about ${title}`} className="selected__video" controls/>
@@ -24,7 +24,7 @@ export default function SelectedVideo(props){
 
             </div>
             <p className="selected__description">{description}</p>
-            
+            <Comments comments={comments} /> 
         </div>
     )
 }

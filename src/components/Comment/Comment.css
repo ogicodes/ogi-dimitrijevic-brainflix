@@ -25,14 +25,41 @@
 /*---------------------------------------------------------*/
 /*                    FONT STYLES                          */
 /*---------------------------------------------------------*/
-.list {
-  padding: 0 1rem;
-  margin-bottom: 2rem;
+.comment {
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: row;
+  border-top: solid #AFAFAF 0.0625rem;
+  border-bottom: solid #AFAFAF 0.0625rem;
+  margin: 1rem 0;
 }
-.list__heading {
+.comment__container {
+  padding-left: 1rem;
+}
+.comment__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.comment__name {
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  font-weight: 700;
+}
+.comment__date {
   font-family: avenir, Arial, Helvetica, sans-serif;
   font-size: 0.8125rem;
   line-height: 1.125rem;
   color: #AFAFAF;
-  font-weight: 700;
-}/*# sourceMappingURL=VideoList.css.map */
+  font-weight: 400;
+}
+.comment__comment {
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  font-weight: 400;
+}/*# sourceMappingURL=Comment.css.map */

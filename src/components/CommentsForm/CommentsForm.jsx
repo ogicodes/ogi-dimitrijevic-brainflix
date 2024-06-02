@@ -2,7 +2,7 @@ import MohanMuruge from '../../assets/images/images/Mohan-muruge.jpg';
 import ButtonText from '../../assets/images/icons/add_comment.svg';
 import Button from '../Button/Button';
 import Image from '../Image/Image';
-
+import './CommentsForm.scss';
 
 export default function CommentsForm() {
 
