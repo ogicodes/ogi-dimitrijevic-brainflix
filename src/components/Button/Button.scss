@@ -11,11 +11,22 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     @include labels-and-buttons-mobile;
     font-weight: 700;
 
-    &__image {
-        padding-left: 0.5rem;
-        padding-right: 5.5rem;
+    @include respond(tablet) {
+        display: none;
     }
 }
+
+.button-tablet {
+    display: none;
+
+    @include respond(tablet) {
+        display: flex;
+        margin-right: 1rem;
+    }
+
+}
+

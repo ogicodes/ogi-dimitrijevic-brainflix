@@ -12,10 +12,11 @@ export default function Header() {
         <>
             <header className='header'>
                 <a className="header__link" href="#"><img className='header__logo' src={Logo} alt="BrainFlix Logo"></img></a>
-                <div>
+                <div className="header__container">
                     <form action="submit" className="header__form">
                         <button className="header__button"><img src={Magnifier}></img></button>
                         <input type="text" placeholder="Search" className="header__search" />
+                        <Button className='button-tablet' src={upload} alt='upload image' content='UPLOAD' />
                         <Image src={MohanMuruge} alt='Profile Picture of Mohan Muruge' />
                     </form>
                     <Button src={upload} alt='upload image' content='UPLOAD' />
