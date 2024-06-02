@@ -21,4 +21,10 @@
             margin: 1.5rem 0;
         }
     }
+
+    @include respond(desktop) {
+        float: left;
+        width: 50%;
+        padding-left: 2rem;
+    }
 }

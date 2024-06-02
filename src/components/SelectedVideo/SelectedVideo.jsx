@@ -8,10 +8,10 @@ export default function SelectedVideo(props){
     const {title, channel, description, image, views, timestamp, likes, comments} = props.selectedVideo
     return (
         <div className="selected">
-            <div className="selected__video-background">
+            <div className={`selected__video-background ${props.hideVideo}`} >
                 <video poster={image} alt={`picture about ${title}`} className="selected__video" controls/>
             </div>
-            <div className='selected__content-container'>
+            <div className={`selected__content-container ${props.desktopComments}`}>
                 <h1 className='selected__title'>{title}</h1>
                 <div className="selected__div">
                     <ul className="selected__list">

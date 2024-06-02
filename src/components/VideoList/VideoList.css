@@ -47,4 +47,11 @@
     line-height: 1.25rem;
     margin: 1.5rem 0;
   }
+}
+@media only screen and (min-width: 1280px) {
+  .list {
+    float: left;
+    width: 50%;
+    padding-left: 2rem;
+  }
 }/*# sourceMappingURL=VideoList.css.map */

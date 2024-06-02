@@ -124,4 +124,19 @@
     font-weight: 400;
     padding: 1rem 0;
   }
+}
+@media only screen and (min-width: 768px) and (min-width: 1280px) {
+  .selected {
+    width: 100%;
+  }
+  .selected__video-background {
+    width: 100%;
+    padding: 0 10rem;
+  }
+  .selected__content-container {
+    float: left;
+    width: 50%;
+    padding-right: 0;
+    border-right: solid #AFAFAF 1px;
+  }
 }/*# sourceMappingURL=SelectedVideo.css.map */
