@@ -14,8 +14,10 @@ export default function CommentsForm() {
             <div className="form__container">
                 <form className="form__form">
                     <label className='form__label' htmlFor="comment">JOIN THE CONVERSATION</label>
-                    <input type="textbox" name='comment' className='form__input' placeholder='Add a new comment'/>
-                    <Button src={ButtonText} alt='make new comment' content='COMMENT' />
+                    <div className='form__input-group'>
+                        <input type="textbox" name='comment' className='form__input' placeholder='Add a new comment'/>
+                        <Button className='button-form' src={ButtonText} alt='make new comment' content='COMMENT' />
+                    </div>
                 </form>
             </div>
         </div>

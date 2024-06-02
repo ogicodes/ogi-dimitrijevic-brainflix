@@ -67,4 +67,21 @@
   line-height: 1.125rem;
   color: #323232;
   font-weight: 400;
+}
+@media only screen and (min-width: 768px) {
+  .comment__name {
+    font-family: avenir, Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  .comment__date {
+    font-family: avenir, Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  .comment__comment {
+    font-family: avenir, Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
 }/*# sourceMappingURL=Comment.css.map */

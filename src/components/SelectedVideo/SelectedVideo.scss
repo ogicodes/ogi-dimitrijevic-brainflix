@@ -47,6 +47,7 @@
 
     &__item-modifier {
         color: $brainFlixBlack;
+        font-weight: 700;
     }
 
     &__description {
@@ -54,5 +55,50 @@
         @include body-copy-mobile;
         color: $brainFlixBlack;
         font-weight: 400;
+    }
+
+    @include respond(tablet) {
+        padding: 0 2.25rem;
+
+        &__video {
+            background-color: $brainFlixDarkBlack;
+        }
+
+        &__title {
+            @include page-header-dt;
+            font-weight: 700;
+        }
+
+        &__list {
+            flex-direction: row;
+            justify-content: space-between;
+            border-top: none;
+        }
+
+        &__subcontainer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__item {
+            @include body-copy-dt;
+            font-weight: 400;
+
+            &:nth-child(odd) {
+                padding-right: 1rem;
+            }
+        }
+
+        &__item-modifier {
+            font-weight: 700;
+        }
+
+        &__description {
+            @include body-copy-dt;
+            font-weight: 400;
+        }
+
+
+        
     }
 }

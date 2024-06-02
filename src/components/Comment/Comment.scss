@@ -44,4 +44,18 @@
         color: $brainFlixBlack;
         font-weight: 400;
     }
+
+    @include respond(tablet) {
+        &__name {
+            @include subheader-dt;
+        }
+
+        &__date {
+            @include body-copy-dt;
+        }
+
+        &__comment {
+            @include body-copy-dt;
+        }
+    }
 }

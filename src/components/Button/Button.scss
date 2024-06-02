@@ -15,6 +15,10 @@
     @include labels-and-buttons-mobile;
     font-weight: 700;
 
+    &:hover {
+        background-color: $brainFlixDarkBlue;
+    }
+
     @include respond(tablet) {
         display: none;
     }
@@ -26,7 +30,33 @@
     @include respond(tablet) {
         display: flex;
         margin-right: 1rem;
+        width: 50%;
+        min-width: 9.375rem;
     }
 
 }
 
+.button-form {
+    color: $brainFlixWhite;
+    background-color: $brainFlixBlue;
+    border: none;
+    border-radius: .25rem;
+    height: 2.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @include labels-and-buttons-mobile;
+    font-weight: 700;
+
+    &:hover {
+        background-color: $brainFlixDarkBlue;
+    }
+
+    @include respond(tablet) {
+        display: flex;
+        margin-right: 1rem;
+        width: 50%;
+        min-width: 9.375rem;
+    }
+}

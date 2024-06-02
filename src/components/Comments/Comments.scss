@@ -8,7 +8,12 @@
     
     &__title {
         @include subheader-mobile;
-        font-weight: 600;
+        font-weight: 700;
         color: $brainFlixBlack;
+    }
+
+    @include respond(tablet) {
+        @include subheader-dt;
+        font-weight: 700;
     }
 }

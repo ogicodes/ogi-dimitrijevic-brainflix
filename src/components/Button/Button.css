@@ -40,6 +40,9 @@
   line-height: 1.25rem;
   font-weight: 700;
 }
+.button:hover {
+  background-color: #0065AD;
+}
 @media only screen and (min-width: 768px) {
   .button {
     display: none;
@@ -53,5 +56,34 @@
   .button-tablet {
     display: flex;
     margin-right: 1rem;
+    width: 50%;
+    min-width: 9.375rem;
+  }
+}
+
+.button-form {
+  color: #FFFFFF;
+  background-color: #0095FF;
+  border: none;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+.button-form:hover {
+  background-color: #0065AD;
+}
+@media only screen and (min-width: 768px) {
+  .button-form {
+    display: flex;
+    margin-right: 1rem;
+    width: 50%;
+    min-width: 9.375rem;
   }
 }/*# sourceMappingURL=Button.css.map */

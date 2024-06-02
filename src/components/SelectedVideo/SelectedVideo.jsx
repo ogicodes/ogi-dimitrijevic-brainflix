@@ -9,11 +9,11 @@ export default function SelectedVideo(props){
     return (
         <div className="selected">
             <video poster={image} alt={`picture about ${title}`} className="selected__video" controls/>
-            <h2 className='selected__title'>{title}</h2>
+            <h1 className='selected__title'>{title}</h1>
             <div className="selected__div">
                 <ul className="selected__list">
                     <div className="selected__subcontainer">
-                        <li className="selected__item selected__item-modifier"><p className="selected__channel">{channel}</p></li>
+                        <li className="selected__item selected__item-modifier"><p className="selected__channel">By {channel}</p></li>
                         <li className="selected__item">{timestamp}</li>
                     </div>
                     <div className="selected__subcontainer">
@@ -24,7 +24,7 @@ export default function SelectedVideo(props){
 
             </div>
             <p className="selected__description">{description}</p>
-            <Comments comments={comments} /> 
+            <Comments  comments={comments} /> 
         </div>
     )
 }
