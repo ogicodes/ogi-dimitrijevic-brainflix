@@ -29,6 +29,9 @@
   padding: 0;
   width: 100%;
 }
+.selected__video-background {
+  background-color: #000000;
+}
 .selected__video {
   width: 100%;
   height: auto;
@@ -77,11 +80,14 @@
   font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
-  .selected {
+  .selected__video-background {
     padding: 0 2.25rem;
   }
   .selected__video {
     background-color: #000000;
+  }
+  .selected__content-container {
+    padding: 0 2.25rem;
   }
   .selected__title {
     font-family: avenir, Arial, Helvetica, sans-serif;
@@ -93,6 +99,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-top: none;
+    margin: 0;
   }
   .selected__subcontainer {
     display: flex;
@@ -115,5 +122,6 @@
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: 400;
+    padding: 1rem 0;
   }
 }/*# sourceMappingURL=SelectedVideo.css.map */

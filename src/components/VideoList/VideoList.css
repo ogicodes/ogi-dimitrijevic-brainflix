@@ -31,8 +31,20 @@
 }
 .list__heading {
   font-family: avenir, Arial, Helvetica, sans-serif;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
   color: #AFAFAF;
   font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  .list {
+    padding: 0 2.25rem;
+    width: 50%;
+  }
+  .list__heading {
+    font-family: avenir, Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    margin: 1.5rem 0;
+  }
 }/*# sourceMappingURL=VideoList.css.map */

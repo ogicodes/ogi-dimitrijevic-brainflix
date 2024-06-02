@@ -7,8 +7,18 @@
     margin-bottom: 2rem;
 
     &__heading {
-        @include subheader-mobile;
+        @include section-header-mobile;
         color: $brainFlixSilver;
         font-weight: 700;
+    }
+
+    @include respond(tablet) {
+        padding: 0 2.25rem;
+        width: 50%;
+
+        &__heading {
+            @include section-header-dt;
+            margin: 1.5rem 0;
+        }
     }
 }

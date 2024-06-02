@@ -6,6 +6,10 @@
     padding: 0;
     width: 100%;
 
+    &__video-background {
+        background-color: $brainFlixDarkBlack;
+    }
+
     &__video {
         width: 100%;
         height: auto;
@@ -58,12 +62,19 @@
     }
 
     @include respond(tablet) {
-        padding: 0 2.25rem;
+
+        &__video-background {
+            padding: 0 2.25rem;
+        }
 
         &__video {
             background-color: $brainFlixDarkBlack;
         }
 
+        &__content-container {
+            padding: 0 2.25rem;
+        }
+        
         &__title {
             @include page-header-dt;
             font-weight: 700;
@@ -73,6 +84,7 @@
             flex-direction: row;
             justify-content: space-between;
             border-top: none;
+            margin: 0;
         }
 
         &__subcontainer {
@@ -96,6 +108,7 @@
         &__description {
             @include body-copy-dt;
             font-weight: 400;
+            padding: 1rem 0;
         }
 
 
