@@ -8,8 +8,13 @@
     flex-direction: row;
     border-top: solid $brainFlixSilver .0625rem;
     border-bottom: solid $brainFlixSilver .0625rem;
-
     margin: 1rem 0;
+
+    &:nth-child(even) {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
 
     &__container {
         padding-left: 1rem;

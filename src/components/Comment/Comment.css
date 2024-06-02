@@ -33,6 +33,11 @@
   border-bottom: solid #AFAFAF 0.0625rem;
   margin: 1rem 0;
 }
+.comment:nth-child(even) {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 .comment__container {
   padding-left: 1rem;
 }
