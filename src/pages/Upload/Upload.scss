@@ -1,0 +1,64 @@
+@use '../../styles/partials/mediaQuery.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
+@use '../../styles/partials/variables.scss' as *;
+
+
+.upload {
+    margin-top: 1rem;
+    border-top: solid $brainFlixMercury 1px;
+    padding: 1rem 1rem;
+
+    &__title {
+        @include page-header-mobile;
+        font-weight: 700;
+        color: $brainFlixBlack;
+        padding-bottom: 0.5rem;
+    }
+
+    &__text {
+        @include section-header-mobile;
+        font-weight: 600;
+        color: $brainFlixSilver;
+        padding-top: 2rem;
+        padding-bottom: 0.25rem;
+    }
+
+    &__thumb-section {
+        width: 100%;
+        height: auto;
+    }
+
+    &__thumb-image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-title {
+        width: 100%;
+        min-height: 2.5rem;
+        padding: 1rem;
+        border-radius: .25rem;
+        border: solid 1px $brainFlixMercury;
+        @include body-copy-mobile;
+        color: $brainFlixBlack;
+    }
+
+    &__form-description {
+        @extend .upload__form-title;
+        margin-bottom: 2rem;
+    }
+
+    &__cancel {
+        border: none;
+        background-color: $brainFlixWhite;
+        color: $brainFlixBlue;
+        @include section-header-mobile;
+        font-weight: 600;
+        padding: 2rem 0 1rem;
+    }
+}

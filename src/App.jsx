@@ -1,25 +1,17 @@
-import React from 'react'
 import './App.scss'
-import Header from './components/Header/Header.jsx'
-import VideoList from './components/VideoList/VideoList.jsx'
-import SelectedVideo from './components/SelectedVideo/SelectedVideo.jsx'
-import { useState } from 'react'
-import videoDetails from './data/video-details.json';
+import HomePage from './pages/HomePage/HomePage.jsx'
+import Upload from './pages/Upload/Upload.jsx'
+
 
 
 export default function App() {
-  const [selectedVideoId, setSelectedVideoId] = useState("84e96018-4022-434e-80bf-000ce4cd12b8")
 
-  const selectedVideo = videoDetails.find((video) => {
-    return video.id === selectedVideoId
-  })
 
 
   return (
     <>
-    <Header />
-    <SelectedVideo selectedVideo={selectedVideo} />
-    <VideoList setSelectedVideoId={setSelectedVideoId} selectedVideoId={selectedVideoId} />
+      <HomePage />
+      <Upload />
     </>
   )
 }

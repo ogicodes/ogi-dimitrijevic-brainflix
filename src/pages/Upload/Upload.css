@@ -1,0 +1,85 @@
+/*---------------------------------------------------------*/
+/*                  MEDIA QUERY MIXIN                      */
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*                      FONT FACE                          */
+/*---------------------------------------------------------*/
+@font-face {
+  font-family: avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Demi.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
+/*---------------------------------------------------------*/
+/*                    FONT STYLES                          */
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*                      COLORS                             */
+/*---------------------------------------------------------*/
+.upload {
+  margin-top: 1rem;
+  border-top: solid #E1E1E1 1px;
+  padding: 1rem 1rem;
+}
+.upload__title {
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #323232;
+  padding-bottom: 0.5rem;
+}
+.upload__text {
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #AFAFAF;
+  padding-top: 2rem;
+  padding-bottom: 0.25rem;
+}
+.upload__thumb-section {
+  width: 100%;
+  height: auto;
+}
+.upload__thumb-image {
+  width: 100%;
+  height: auto;
+}
+.upload__form {
+  display: flex;
+  flex-direction: column;
+}
+.upload__form-title, .upload__form-description {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: solid 1px #E1E1E1;
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+}
+.upload__form-description {
+  margin-bottom: 2rem;
+}
+.upload__cancel {
+  border: none;
+  background-color: #FFFFFF;
+  color: #0095FF;
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  padding: 2rem 0 1rem;
+}/*# sourceMappingURL=Upload.css.map */

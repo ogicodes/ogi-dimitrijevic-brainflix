@@ -1,0 +1,25 @@
+import Header from "../../components/Header/Header";
+import SelectedVideo from "../../components/SelectedVideo/SelectedVideo";
+import VideoList from "../../components/VideoList/VideoList";
+import { useState } from 'react'
+import videoDetails from '../../data/video-details.json';
+
+
+
+
+export default function HomePage() {
+
+    const [selectedVideoId, setSelectedVideoId] = useState("84e96018-4022-434e-80bf-000ce4cd12b8")
+
+    const selectedVideo = videoDetails.find((video) => {
+      return video.id === selectedVideoId
+    })
+
+    return (
+        <>
+        <Header />
+        <SelectedVideo selectedVideo={selectedVideo} />
+        <VideoList setSelectedVideoId={setSelectedVideoId} selectedVideoId={selectedVideoId} />
+        </>
+    )
+}
