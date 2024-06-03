@@ -58,4 +58,14 @@
             @include body-copy-dt;
         }
     }
+
+    @include respond(desktop) {
+        &__date {
+            padding-right: 1rem;
+        }
+
+        &__comment {
+            padding-right: 1rem;
+        }
+    }
 }

@@ -3,6 +3,15 @@ import Image from '../Image/Image'
 
 export default function Comment(props) {    
     const {key, name, timestamp, comment} = props
+
+    const date = new Date(timestamp)
+
+    const day = date.getDay()
+    const month = date.getMonth()
+    const year = date.getFullYear()
+
+    const fullDate = `${day}/${month}/${year}`
+
     return (
             <div key={key} className="comment">
             <div className="comment__avatar">
@@ -11,7 +20,7 @@ export default function Comment(props) {
             <div className="comment__container">
                 <div className="comment__title">
                     <p className='comment__name'>{name}</p>
-                    <p className="comment__date">{timestamp}</p>
+                    <p className="comment__date">{fullDate}</p>
                 </div>
                 <p className="comment__comment">{comment}</p>
             </div>

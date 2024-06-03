@@ -139,4 +139,7 @@
     padding-right: 0;
     border-right: solid #AFAFAF 1px;
   }
+  .selected__list {
+    padding-right: 1rem;
+  }
 }/*# sourceMappingURL=SelectedVideo.css.map */

@@ -84,4 +84,12 @@
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
+}
+@media only screen and (min-width: 1280px) {
+  .comment__date {
+    padding-right: 1rem;
+  }
+  .comment__comment {
+    padding-right: 1rem;
+  }
 }/*# sourceMappingURL=Comment.css.map */
