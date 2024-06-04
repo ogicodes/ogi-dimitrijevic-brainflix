@@ -82,4 +82,12 @@
   line-height: 1.25rem;
   font-weight: 600;
   padding: 2rem 0 1rem;
+}
+.upload__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.upload__link {
+  text-decoration: none;
 }/*# sourceMappingURL=Upload.css.map */

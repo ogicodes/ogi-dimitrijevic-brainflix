@@ -3,6 +3,8 @@ import Header from '../../components/Header/Header'
 import thumb from '../../assets/images/images/Upload-video-preview.jpg'
 import Button from '../../components/Button/Button'
 import publish from '../../assets/images/icons/publish.svg'
+import { Link } from 'react-router-dom'
+
 
 export default function Upload() {
 
@@ -22,7 +24,11 @@ export default function Upload() {
                         <label className='upload__text' htmlFor="desctiption">ADD A VIDEO DESCRIPTION</label>
                         <textarea className='upload__form-description' type="textarea" placeholder='Add a description to your video' rows="4" cols="50" />
                         <Button src={publish} alt='upload image' content='PUBLISH' />
-                        <button className='upload__cancel' >CANCEL</button>
+                        <ul className='upload__list'>
+                            <li className='upload__item'>
+                                <Link to='/' className='upload__link'><button className='upload__cancel' >CANCEL</button></Link>
+                            </li>
+                        </ul>
                     </form>
                 </div>
 

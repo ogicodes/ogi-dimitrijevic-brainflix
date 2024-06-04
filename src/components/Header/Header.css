@@ -34,6 +34,7 @@
 }
 .header__link {
   padding-top: 1rem;
+  text-decoration: none;
 }
 .header__form {
   display: flex;
@@ -63,6 +64,18 @@
   border-top-left-radius: 4px;
   padding: 0 1rem;
   color: #323232;
+}
+.header__list {
+  list-style: none;
+}
+.header__list--modifier {
+  padding: 1rem 0;
+  max-width: 7.5rem;
+  max-height: 1.5625rem;
+}
+.header__logo {
+  width: 100%;
+  height: auto;
 }
 @media only screen and (min-width: 768px) {
   .header {

@@ -11,6 +11,7 @@
 
     &__link {
         padding-top: 1rem;
+        text-decoration: none;
     }
 
     &__form {
@@ -41,6 +42,21 @@
         border-top-left-radius: 4px;
         padding: 0 1rem;
         color: $brainFlixBlack;
+    }
+
+    &__list {
+        list-style: none;
+
+        &--modifier {
+            padding: 1rem 0;
+            max-width: 7.5rem;
+            max-height: 1.5625rem;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        height: auto;
     }
 
     @include respond(tablet) {
