@@ -6,7 +6,7 @@ import Comments from '../Comments/Comments';
 export default function SelectedVideo(props){
 
 
-    const {title, channel, description, image, views, timestamp, likes, comments} = props.selectedVideo.data
+    const {title, channel, description, image, views, timestamp, likes, comments} = props.selectedVideo
 
     const date = new Date(timestamp)
 

@@ -10,7 +10,6 @@ export default function Upload() {
 
     return (
         <>
-            <Header />
             <div className="upload">
                 <h1 className="upload__title">Upload Video</h1>
                 <p className="upload__text">VIDEO THUMBNAIL</p>

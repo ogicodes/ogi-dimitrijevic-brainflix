@@ -10,7 +10,6 @@ export default function VideoCard(props){
 
     const clickHandler = () => {
         setSelectedVideoId(id)
-        console.log(id)
     }
 
     return(
