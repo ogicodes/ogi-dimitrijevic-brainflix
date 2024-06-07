@@ -9,10 +9,10 @@ export default function Comments(props) {
 
     return (
         <div className="comments">
-            <p className="comments__title">3 Comments</p>
+            <p className="comments__title">{comments.length} Comments</p>
             <CommentsForm />
             {comments.map((comment) => {
-                return <Comment name={comment.name} timestamp={comment.timestamp} comment={comment.comment} />
+                return <Comment key={comment.id} name={comment.name} timestamp={comment.timestamp} comment={comment.comment} />
             })}
         </div>
     )

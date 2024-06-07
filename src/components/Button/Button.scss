@@ -59,4 +59,17 @@
         width: 50%;
         min-width: 9.375rem;
     }
+
+
+}
+
+.button-upload {
+    display: none;
+
+    @include respond(tablet) {
+        display: flex;
+        margin-right: 1rem;
+        width: 60%;
+        min-width: 9.375rem;
+    }
 }

@@ -71,4 +71,80 @@
     &__link {
         text-decoration: none;
     }
+
+    @include respond(tablet) {
+        padding: 2.25rem 2rem 2rem;
+
+        &__title {
+            @include page-header-dt;
+        }
+
+        &__text {
+            border-top: solid 1px $brainFlixMercury;
+            @include section-header-dt;
+        }
+
+        &__thumb-section {
+            width: 75%;
+        }
+    
+        &__thumb-image {
+            width: 75%;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
+
+        &__cancel {
+            padding: 0 1rem;
+        }
+    }
+
+    @include respond(desktop) {
+        padding: 5rem 5rem;
+
+        &__form-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        &__thumb-section {
+            width: 40%;
+            border-bottom: solid 1px $brainFlixMercury;
+        }
+
+        &__form {
+            width: 60%;
+            border-bottom: solid 1px $brainFlixMercury;
+            padding-bottom: 2rem;
+        }
+
+        &__text {
+            padding: .5rem;
+            border: none;
+        }
+
+        &__form-title {
+            padding: .5rem;
+        }
+
+        &__form-description {
+            padding: .8rem;
+        }
+
+        &__list {
+            padding-top: 1rem;
+        }
+
+    }
 }

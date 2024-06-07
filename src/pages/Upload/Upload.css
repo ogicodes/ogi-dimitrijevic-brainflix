@@ -90,4 +90,71 @@
 }
 .upload__link {
   text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  .upload {
+    padding: 2.25rem 2rem 2rem;
+  }
+  .upload__title {
+    font-family: avenir, Arial, Helvetica, sans-serif;
+    font-size: 2.0625rem;
+    line-height: 2.75rem;
+  }
+  .upload__text {
+    border-top: solid 1px #E1E1E1;
+    font-family: avenir, Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+  .upload__thumb-section {
+    width: 75%;
+  }
+  .upload__thumb-image {
+    width: 75%;
+  }
+  .upload__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .upload__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .upload__cancel {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .upload {
+    padding: 5rem 5rem;
+  }
+  .upload__form-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .upload__thumb-section {
+    width: 40%;
+    border-bottom: solid 1px #E1E1E1;
+  }
+  .upload__form {
+    width: 60%;
+    border-bottom: solid 1px #E1E1E1;
+    padding-bottom: 2rem;
+  }
+  .upload__text {
+    padding: 0.5rem;
+    border: none;
+  }
+  .upload__form-title, .upload__form-description {
+    padding: 0.5rem;
+  }
+  .upload__form-description {
+    padding: 0.8rem;
+  }
+  .upload__list {
+    padding-top: 1rem;
+  }
 }/*# sourceMappingURL=Upload.css.map */

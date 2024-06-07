@@ -2,7 +2,7 @@ import './Comment.scss'
 import Image from '../Image/Image'
 
 export default function Comment(props) {    
-    const {key, name, timestamp, comment} = props
+    const {id, name, timestamp, comment} = props
 
     const date = new Date(timestamp)
 
@@ -13,7 +13,7 @@ export default function Comment(props) {
     const fullDate = `${day}/${month}/${year}`
 
     return (
-            <div key={key} className="comment">
+            <div key={id} className="comment">
             <div className="comment__avatar">
                 <Image />
             </div>

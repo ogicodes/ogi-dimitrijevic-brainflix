@@ -47,12 +47,17 @@ export default function HomePage(props) {
     }
 
 
+
+   
+
+
     useEffect(() => {
         if(videoId) {
             getVideoDetails()
             return
         }
         getVideos()
+
     },[videoId])
 
     if(!selectedVideo) {
@@ -60,6 +65,7 @@ export default function HomePage(props) {
         getVideos()
         return
     }
+
 
 
     return (
