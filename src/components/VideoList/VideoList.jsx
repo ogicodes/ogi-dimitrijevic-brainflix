@@ -6,8 +6,7 @@ export default function VideoList(props) {
   return (
     <section className="list">
       <h2 className="list__heading">NEXT VIDEOS</h2>
-      {props.videoList
-        .filter((video) => {
+      {props.videoList.filter((video) => {
           return video.id !== props.selectedVideo.id;
         })
         .map((video) => {
