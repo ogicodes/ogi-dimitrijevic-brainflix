@@ -1,47 +1,46 @@
-@use '../../styles/partials/mediaQuery' as *;
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/mixins' as *;
+@use "../../styles/partials/mediaQuery" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+
+  &__photo-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+  }
+
+  &__photo-container {
+    border-radius: 0.25rem;
+    background-color: $brainFlixSilver;
+    margin-right: 1rem;
+    width: 40%;
+  }
+
+  &__text-container {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+  }
 
-    &__photo-image{
-        width: 100%;
-        height: 100%;
-        border-radius: .25rem;
-    }
+  &__title {
+    @include subheader-mobile;
+    color: $brainFlixBlack;
+    font-weight: 700;
+    margin: 0;
+  }
 
-    &__photo-container{
-        border-radius: .25rem;
-        background-color: $brainFlixSilver;
-        margin-right: 1rem;
-        width: 40%;
-    }
+  &__channel {
+    @include body-copy-mobile;
+    color: $brainFlixBlack;
+    font-weight: 400;
+    margin: 0;
+  }
 
-    &__text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 60%;
-    }
-
-    &__title {
-        @include subheader-mobile;
-        color: $brainFlixBlack;
-        font-weight: 700;
-        margin: 0;
-    }
-
-    &__channel {
-        @include body-copy-mobile;
-        color: $brainFlixBlack;
-        font-weight: 400;
-        margin: 0;
-    }
-
-    @include respond(tablet) {
-        
-    }
+  @include respond(tablet) {
+  }
 }

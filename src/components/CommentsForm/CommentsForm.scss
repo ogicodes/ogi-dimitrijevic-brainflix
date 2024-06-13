@@ -1,52 +1,50 @@
-@use '../../styles/partials/mediaQuery' as *;
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/mixins' as *;
-
+@use "../../styles/partials/mediaQuery" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .form {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    &__avatar {
-        padding-top: 1rem;
+  &__avatar {
+    padding-top: 1rem;
+  }
+
+  &__container {
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  &__label {
+    @include section-header-mobile;
+    font-weight: 400;
+    color: $brainFlixSilver;
+  }
+
+  &__input {
+    padding-left: 1rem;
+    width: 100%;
+    min-width: 15rem;
+    min-height: 2.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    border: solid 1px $brainFlixSilver;
+  }
+
+  @include respond(tablet) {
+    &__form {
+      width: 100%;
     }
 
-    &__container {
-        padding-left: 1rem;
-        width: 100%;
-    }
-
-    &__label {
-        @include section-header-mobile;
-        font-weight: 400;
-        color: $brainFlixSilver;
+    &__input-group {
+      display: flex;
+      flex-direction: row;
     }
 
     &__input {
-        padding-left: 1rem;
-        width: 100%;
-        min-width: 15rem;
-        min-height: 2.25rem;
-        margin-bottom: 1rem;
-        border-radius: .25rem;
-        border: solid 1px $brainFlixSilver;
+      margin-right: 1rem;
+      max-width: 100%;
+      min-height: 2.5rem;
     }
-
-    @include respond(tablet) {
-
-        &__form {
-            width: 100%;
-        }
-
-        &__input-group {
-            display: flex;
-            flex-direction: row;
-        }
-
-        &__input {
-            margin-right: 1rem;
-            max-width: 100%;
-            min-height: 2.5rem;
-        }
-    }
+  }
 }

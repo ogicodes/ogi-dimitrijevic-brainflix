@@ -1,71 +1,71 @@
-@use '../../styles/partials/mediaQuery' as *;
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/mixins' as *;
+@use "../../styles/partials/mediaQuery" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .comment {
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: row;
+  border-top: solid $brainFlixSilver 0.0625rem;
+  border-bottom: solid $brainFlixSilver 0.0625rem;
+  margin: 1rem 0;
+
+  &:nth-child(even) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__container {
+    padding-left: 1rem;
+  }
+
+  &__title {
     display: flex;
-    padding: 1rem 0;
     flex-direction: row;
-    border-top: solid $brainFlixSilver .0625rem;
-    border-bottom: solid $brainFlixSilver .0625rem;
-    margin: 1rem 0;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
 
-    &:nth-child(even) {
-        border: none;
-        margin: 0;
-        padding: 0;
-    }
+  &__name {
+    @include subheader-mobile;
+    color: $brainFlixBlack;
+    font-weight: 700;
+  }
 
-    &__container {
-        padding-left: 1rem;
-    }
+  &__date {
+    @include body-copy-mobile;
+    color: $brainFlixSilver;
+    font-weight: 400;
+  }
 
-    &__title {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 1rem;
-    }
+  &__comment {
+    @include body-copy-mobile;
+    color: $brainFlixBlack;
+    font-weight: 400;
+  }
 
+  @include respond(tablet) {
     &__name {
-        @include subheader-mobile;
-        color: $brainFlixBlack;
-        font-weight: 700;
+      @include subheader-dt;
     }
 
     &__date {
-        @include body-copy-mobile;
-        color: $brainFlixSilver;
-        font-weight: 400;
+      @include body-copy-dt;
     }
 
     &__comment {
-        @include body-copy-mobile;
-        color: $brainFlixBlack;
-        font-weight: 400;
+      @include body-copy-dt;
+    }
+  }
+
+  @include respond(desktop) {
+    &__date {
+      padding-right: 1rem;
     }
 
-    @include respond(tablet) {
-        &__name {
-            @include subheader-dt;
-        }
-
-        &__date {
-            @include body-copy-dt;
-        }
-
-        &__comment {
-            @include body-copy-dt;
-        }
+    &__comment {
+      padding-right: 1rem;
     }
-
-    @include respond(desktop) {
-        &__date {
-            padding-right: 1rem;
-        }
-
-        &__comment {
-            padding-right: 1rem;
-        }
-    }
+  }
 }

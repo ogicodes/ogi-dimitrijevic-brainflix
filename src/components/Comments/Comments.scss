@@ -1,21 +1,20 @@
-@use '../../styles/partials/mediaQuery' as *;
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/mixins' as *;
-
+@use "../../styles/partials/mediaQuery" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .comments {
-    padding: 0 1rem;
-    
-    &__title {
-        @include subheader-mobile;
-        font-weight: 700;
-        color: $brainFlixBlack;
-    }
+  padding: 0 1rem;
 
-    @include respond(tablet) {
-        padding: 0;
+  &__title {
+    @include subheader-mobile;
+    font-weight: 700;
+    color: $brainFlixBlack;
+  }
 
-        @include subheader-dt;
-        font-weight: 700;
-    }
+  @include respond(tablet) {
+    padding: 0;
+
+    @include subheader-dt;
+    font-weight: 700;
+  }
 }
