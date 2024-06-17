@@ -25,12 +25,12 @@
 
     &__thumb-section {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     &__thumb-image {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     &__form {
@@ -51,6 +51,10 @@
     &__form-description {
         @extend .upload__form-title;
         margin-bottom: 2rem;
+    }
+
+    &__thumb-spacer {
+        display: none
     }
 
     &__cancel {
@@ -74,6 +78,8 @@
 
     @include respond(tablet) {
         padding: 2.25rem 2rem 2rem;
+
+
 
         &__title {
             @include page-header-dt;
@@ -120,12 +126,18 @@
 
         &__thumb-section {
             width: 40%;
+        }
+
+        &__thumb-spacer {
+            @include page-header-mobile;
+            font-weight: 700;
+            color: transparent;
+            display: block;
             border-bottom: solid 1px $brainFlixMercury;
         }
 
         &__form {
             width: 60%;
-            border-bottom: solid 1px $brainFlixMercury;
             padding-bottom: 2rem;
         }
 
@@ -144,6 +156,7 @@
 
         &__list {
             padding-top: 1rem;
+            border-top: solid 1px $brainFlixMercury;
         }
 
     }

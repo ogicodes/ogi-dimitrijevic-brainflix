@@ -2,19 +2,20 @@ import VideoCard from "../VideoCard/VideoCard";
 import "../VideoList/VideoList.scss";
 import { Link } from "react-router-dom";
 
-export default function VideoList(props) {
+export default function VideoList({ videoList, selectedVideo, setSelectedVideo }) {
+
   return (
     <section className="list">
       <h2 className="list__heading">NEXT VIDEOS</h2>
-      {props.videoList.filter((video) => {
-          return video.id !== props.selectedVideo.id;
-        })
-        .map((video) => {
+      {videoList.filter((video) => {
+          return video.id !== selectedVideo.id;
+        }).map((video) => {
           return (
-            <Link key={video.id} to={`/videos/${video.id}`}>
+            <Link to={`/videos/${video.id}`}>
               <VideoCard
+                key={video.id}
                 video={video}
-                setSelectedVideoId={props.setSelectedVideo}
+                setSelectedVideoId={setSelectedVideo}
               />
             </Link>
           );

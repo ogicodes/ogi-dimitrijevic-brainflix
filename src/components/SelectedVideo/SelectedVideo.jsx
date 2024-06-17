@@ -64,7 +64,7 @@ export default function SelectedVideo(props) {
           </ul>
         </div>
         <p className="selected__description">{description}</p>
-        <Comments comments={comments} />
+        { comments && <Comments comments={comments} /> }
       </div>
     </div>
   );
