@@ -1,8 +1,8 @@
 *BrainStation April Cohort (Toronto) - Software Engineering*
 
-# Band Site
+# Brainflix
 
-Super cool bandsite designed with a mobile first approach.
+Super cool Youtube Clone designed with a mobile first approach.
 
 ---
 
